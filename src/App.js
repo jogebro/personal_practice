@@ -19,7 +19,10 @@ function App() {
   }
 
   const editTask = (index)=>{
-    
+    const tarea = [...tasks]
+    const dato = prompt('Edita tu dato')
+    tarea.splice(index, 1, dato)
+    setTask(tarea)
   }
 
   return (
