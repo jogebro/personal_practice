@@ -30,13 +30,8 @@ function App() {
       <header className="App-header">
         <div>
           <h1>Lista de Videojuegos</h1>
-          <input 
-          type='text'
-          placeholder='Agregar Juego'
-          value={newTask}
-          onChange={(e)=> setNewTask(e.target.value)}
-          />
-          <button onClick={aggnewTask}>Guardar</button>
+          <input type='text' placeholder='Agregar Juego' value={newTask} onChange={(e)=> setNewTask(e.target.value)}/>
+          <button type='submit' onClick={aggnewTask}>Guardar</button>
         </div>
         <div>
           <ul>
